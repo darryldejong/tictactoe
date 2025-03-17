@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #e60000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4em;
+    letter-spacing: 3px;
+    padding: 10px;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3), 0 0 25px #ff4d4d, 0 0 5px #ff4d4d;
+}
+
+p {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #008cff;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #6ab2ff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+button:hover {
+    background-color: rgb(54, 180, 248);
+}
+
+button:focus {
+    outline: none;
+}
+
+#start-screen {
+    text-align: center;
+    padding: 20px;
+}
+
+.bot-choice {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bot-choice img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: transform 0.3s;
+}
+
+.bot-choice:hover img {
+    transform: scale(1.1);
+}
+
+.difficulty p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#game-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 75px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    background-color: #fff;
+    border: 2px solid #105db0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #f1f1f1;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#result p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#reset, #back-to-start {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#back-to-start {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+#back-to-start:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+    #game-board {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+    }
+
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+    }
+}

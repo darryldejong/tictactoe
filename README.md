@@ -1,9 +1,10 @@
 # Tictactoe
-Play against an intelligent AI with adjustable difficulty levels, easy, medium, and hard
+Play against an adaptive AI with adjustable difficulty levels: easy, medium, and hard.
+
 
 ![Image](images/Image.png)
 
-A big thank you to these artists, full credit goes to them!
+A sincere thank you to these artists. All rights belong to them.
 
 - [FREE ICON](https://www.deviantart.com/snowyglobe10/art/FREE-ICON-328004137) by **snowyglobe10**
 - [Mittens Icon](https://www.deviantart.com/tsiki10/art/Mittens-Icon-301624130) by **Tsiki10**
